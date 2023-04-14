@@ -41,7 +41,9 @@ const toProps = {
 export const MessagesPage = ({ type }: MessagesPageProps) => {
   const alternatingMessage = (
     <div>
+      {/* @ts-ignore */}
       <FullMessage {...fromProps} showDateDivider />
+      {/* @ts-ignore */}
       <FullMessage {...toProps} />
     </div>
   );

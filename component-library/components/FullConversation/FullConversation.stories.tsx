@@ -45,7 +45,9 @@ export const FullConversationWithMessages = Template.bind({});
 FullConversationWithMessages.args = {
   messages: Array(20).fill(
     <div>
+      {/* @ts-ignore */}
       <FullMessage {...fromProps} />
+      {/* @ts-ignore */}
       <FullMessage {...toProps} />
     </div>,
   ),
